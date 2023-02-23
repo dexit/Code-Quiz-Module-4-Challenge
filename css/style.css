@@ -35,9 +35,11 @@ section.container {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    min-height: 50vh;
-    padding: 5vh;
-    margin: 26px auto;
+    max-width: calc(100vw - 44%);
+    padding: 26px;
+    margin: 26px;
+    min-height: 275px;
+    text-align: center;
 }
 button.quiz-start {
     transition: all 380ms ease-out, font-weight 550ms ease-out 100ms;
