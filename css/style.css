@@ -16,7 +16,7 @@ Styling
 
     font-family: Short Stack, cursive, sans-serif;
 }
-
+/* Section styles */
 section.container {
     display: flex;
     flex-direction: column;
@@ -26,4 +26,16 @@ section.container {
     align-content: center;
     min-height: 100vh;
     height: 100%;
+}
+/* Quiz styles */
+.quiz-question {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    padding: 5vh;
+    margin: 26px auto;
 }
