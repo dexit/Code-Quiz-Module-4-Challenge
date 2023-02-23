@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rihards 'dExIT' Man - Challenge 4 - Code Quiz</title>
+        <meta name="title" content="Rihards 'dExIT' Man - Challenge 4 - Code Quiz">
+        <meta name="description" content="Trying to get my head arround javascript made content">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Adding doodle.css as i am lazy to base style it  -->
+        <link rel="stylesheet" href="./css/doodle-css/doodle.css">
+        <!-- Adding style.css to add any additional overrides  -->
+         <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body class="doodle">
+    <!-- adding a nice notification for oldscool browsers using pure html conditions -->
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+        
+               <!-- This is the header/navbar -->
+        <header class="quiz-header">
+                <nav class="quiz-navigation">
+                    <ul>
+                        <li><a class="top15" id="top15" href="./top15.html">Top15 - HighScores</a></li>
+                    </ul>
+                </nav>
+        </header>
+         <!-- This is a the container wrapper -->
+        <div id="main" class="container">
+           
+            <!-- Div for timer -->
+            <div id="currentTime" class="quiz-timer"></div>
+            <!-- Div for quiz content -->
+            <div id="quizQA" class="quiz-question">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                    answers
+                    will penalize your score/time by ten seconds!</p>
+                <ul id="answersList" class="quiz-answers-list"></ul>
+                <!-- Buttons -->
+                <button id="quizStart" class="quiz-start">Start Quiz</button>
+            </div>
+    
+        </div>
+
+        <!-- adding my base logic javascript file that will incorporate the other two Questions and Top15 aka Highscores -->
+        <script type="text/javascript" src="./js/logic.js" async defer></script>
+        <script type="text/javascript" src="./js/questions.js" async defer></script>
+        <script type="text/javascript" src="./js/top15.js" async defer></script>
+
+    </body>
+</html>
+
