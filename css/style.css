@@ -33,7 +33,7 @@ section.container {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     min-height: 50vh;
     padding: 5vh;
