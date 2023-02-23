@@ -13,5 +13,17 @@ Styling
     box-sizing: border-box;  /* Sets the box sizing to be aligned to the box border*/
     padding: 0;  /* Set the padding to zero */
     margin: 0; /* Set the margins to zero */
+
+    font-family: Short Stack, cursive, sans-serif;
 }
 
+section.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    height: 100%;
+}
