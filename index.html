@@ -12,9 +12,6 @@
         <meta name="description" content="Trying to get my head arround javascript made content">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-        <!-- Adding doodle.css as i am lazy to base style it 
-        <link rel="stylesheet" href="./css/doodle-css/doodle.css">  -->
-        <!-- Adding style.css to add any additional overrides  -->
          <link rel="stylesheet" href="./css/style.css">
     </head>
     <body class="doodle">
@@ -31,42 +28,36 @@
                     </ul>
                 </nav>
         </header>
-         <!-- This is a the container wrapper -->
-         <section id="wrapper" class="container">
-            <!-- Div for timer -->
-            <div id="currentTime"></div>
-            <!-- Div for quiz content -->
-            <div id="questionsDiv">
-                <h1>Coding Quiz Challenge</h1>
-                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
-                    answers
-                    will penalize your score/time by ten seconds!</p>
-                <ul id="choicesUl"></ul>
-                <!-- Buttons -->
-                <button id="startTime">Start Quiz</button>
-            </div>
-    
-        </section>
-       <!--  <section id="main" class="container">
+        <main>
+            <section class="quiz-title">
+                <h1>Challenge 4 - Code Quiz</h1>
+            </section>
+            <section class="quiz-timer">
+              <p id="timer"></p>
+            </section>
+            <section class="quiz-feedback quiz-question ">
+                <p id="feedback"></p>
+                </section>
+            <section id="quiz" class="container quiz-question">
            
-            Div for timer 
-            <div id="currentTime" class="quiz-timer"></div>
-           Div for quiz content 
-            <div id="quizQA" class="quiz-question doodle-border">
-                <h1>Coding Quiz Challenge</h1>
-                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
-                    answers
-                    will penalize your score/time by ten seconds!</p>
-            </div>
-            <div class="answerz">
-            
-                <ul id="answersList" class="quiz-answers-list"></ul>
-            </div>
-              
-            <div class="thebuttons">
-                <button id="quizStart" class="quiz-start">Start Quiz</button>
-            </div>
-        </section>-->
+
+              <h2 id="question"></h2>
+              <ul id="choices"></ul>
+
+              <button id="start">Start Quiz</button>
+            </section>
+
+         
+            <section id="results" style="display:none;">
+                <h2>Results</h2>
+                <p>You scored <span id="score"></span> out of <span id="total"></span>.</p>
+                <button id="restart">Restart</button>
+            </section>
+          </main>
+         <!-- This is a the container wrapper -->
+          
+
+
 
         <!-- adding my base logic javascript file that will incorporate the other two Questions and Top15 aka Highscores -->
         <script type="text/javascript" src="./js/questions.js" async defer></script>
