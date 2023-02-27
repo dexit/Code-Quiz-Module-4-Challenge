@@ -32,26 +32,46 @@
                 </nav>
         </header>
          <!-- This is a the container wrapper -->
-        <section id="main" class="container">
-           
+         <section id="wrapper" class="container">
             <!-- Div for timer -->
-            <div id="currentTime" class="quiz-timer"></div>
+            <div id="currentTime"></div>
             <!-- Div for quiz content -->
+            <div id="questionsDiv">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
+                    answers
+                    will penalize your score/time by ten seconds!</p>
+                <ul id="choicesUl"></ul>
+                <!-- Buttons -->
+                <button id="startTime">Start Quiz</button>
+            </div>
+    
+        </section>
+       <!--  <section id="main" class="container">
+           
+            Div for timer 
+            <div id="currentTime" class="quiz-timer"></div>
+           Div for quiz content 
             <div id="quizQA" class="quiz-question doodle-border">
                 <h1>Coding Quiz Challenge</h1>
                 <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect
                     answers
                     will penalize your score/time by ten seconds!</p>
+            </div>
+            <div class="answerz">
+            
                 <ul id="answersList" class="quiz-answers-list"></ul>
-                <!-- Buttons -->
+            </div>
+              
+            <div class="thebuttons">
                 <button id="quizStart" class="quiz-start">Start Quiz</button>
             </div>
-        </section>
+        </section>-->
 
         <!-- adding my base logic javascript file that will incorporate the other two Questions and Top15 aka Highscores -->
-        <script type="text/javascript" src="./js/logic.js" async defer></script>
         <script type="text/javascript" src="./js/questions.js" async defer></script>
-        <script type="text/javascript" src="./js/top15.js" async defer></script>
+       <!-- <script type="text/javascript" src="./js/questions.js" async defer></script>
+      <script type="text/javascript" src="./js/top15.js" async defer></script> -->
 
     </body>
 </html>
