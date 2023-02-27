@@ -45,10 +45,11 @@ section.container {
 }
 button.quiz-start {
     transition: all 380ms ease-out, font-weight 550ms ease-out 100ms;
+    background: #ededed;
+    color:#3c3c3c;
 }
 .quiz-start:hover {
-    border-image-outset: 0.5;
-    font-size: 1.25em;
-    font-weight: 900;
+background: #3c3c3c;
+color:white;
     cursor: help;
 }
